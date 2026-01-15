@@ -31,6 +31,7 @@ Green Pods (v2) ← Canary Version                  <br>
 
 Traffic is split based on the **number of running pods**.
 
+![](./images/Artitecture.png)
 ---
 
 ### Tools & Technologies Used
@@ -294,3 +295,4 @@ eksctl delete cluster --name blue-green-cluster --region ap-south-1
 This project simulates a real-world production deployment strategy used by DevOps teams.
 
 It combines AWS, Kubernetes, and release engineering best practices, making it resume and interview ready.
+
