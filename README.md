@@ -19,14 +19,14 @@ This project is implemented using:
 
 ### Architecture Diagram (Conceptual)
 
-User
-↓
-AWS LoadBalancer Service
-↓
-Kubernetes Service
-↓
-Blue Pods (v1) ← Stable Version
-Green Pods (v2) ← Canary Version
+User <br>
+↓   <br>
+AWS LoadBalancer Service      <br>
+↓      <br>
+Kubernetes Service      <br>
+↓         <br>
+Blue Pods (v1) ← Stable Version              <br>
+Green Pods (v2) ← Canary Version                  <br>
 
 
 Traffic is split based on the **number of running pods**.
@@ -48,13 +48,13 @@ Traffic is split based on the **number of running pods**.
 ---
 
 ### Project Structure
-eks-blue-green-canary/
-│
-├── blue-deployment.yaml
-├── green-canary.yaml
-├── service.yaml
-├── blue-index.html
-├── green-index.html
+eks-blue-green-canary/         <br>
+│                          <br>
+├── blue-deployment.yaml            <br>
+├── green-canary.yaml                  <br>
+├── service.yaml                     <br>
+├── blue-index.html                 <br>
+├── green-index.html                <br>
 └── README.md
 
 
@@ -292,4 +292,5 @@ eksctl delete cluster --name blue-green-cluster --region ap-south-1
 ### Conclusion
 
 This project simulates a real-world production deployment strategy used by DevOps teams.
+
 It combines AWS, Kubernetes, and release engineering best practices, making it resume and interview ready.
